@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "id": "stevesclientplugins",
+  "version": "${version}",
+  "name": "StevesClientPlugins",
+  "description": "",
+  "authors": [],
+  "contact": {},
+  "license": "All-Rights-Reserved",
+  "icon": "assets/stevesclientplugins/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "io.github.stevetheengineer.clientplugins.client.StevesClientPluginsClient"
+    ],
+    "main": [
+      "io.github.stevetheengineer.clientplugins.StevesClientPlugins"
+    ]
+  },
+  "mixins": [
+    "stevesclientplugins.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric-language-kotlin": ">=${kotlin_loader_version}",
+    "fabric-api": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
